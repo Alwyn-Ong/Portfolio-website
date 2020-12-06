@@ -1,0 +1,86 @@
+{
+  "main": {
+    "name":"Alwyn Ong",
+    "description":"Software Developer | Gaming Enthusiast",
+    "image":"profilepic.jpg",
+    "bio":"I am a penultimate Information Systems undergraduate from Singapore Management University (SMU), with an interest in Software Development. I am passionate about technology and using it to solve problems, including my own. Check out my projects below!",
+    "resumedownload":"Alwyn Ong.pdf",
+    "social":[
+      {
+        "name":"linkedin",
+        "url":"https://www.linkedin.com/in/alwyn-ong/",
+        "className":"fa fa-linkedin"
+      },
+      {
+        "name":"github",
+        "url":"https://github.com/Alwyn-Ong",
+        "className":"fa fa-github"
+      },
+      {
+        "name":"github",
+        "url":"mailto:alwyn.ong.2018@sis.smu.edu.sg",
+        "className":"fa fa-envelope"
+      }
+    ]
+  },
+  "resume":{
+    "education":[
+      {
+        "school":"Singapore Management University (SMU)",
+        "degree":"Information Systems",
+        "graduated":"August 2018 - May 2022",
+        "description":"Relevant school activities: Business Intelligence & Analytics - Data Associate Program, Coder's Assembly - Mentor"
+      }
+    ],
+    "work":[
+      {
+        "company":"Government Technology Agency (GovTech)",
+        "title":"Developer Intern",
+        "years":"May 2020 - August 2020",
+        "description":"."
+      },
+      {
+        "company":"CoXPlore",
+        "title":"Information Technology Intern",
+        "years":"Dec 2019",
+        "description":"."
+      }
+    ],
+    "skills":[
+      {
+        "name":"Python",
+        "level":"80%"
+      },
+      {
+        "name":"JAVA",
+        "level":"80%"
+      },
+      {
+        "name":"MySQL",
+        "level":"80%"
+      },
+      {
+        "name":"PHP",
+        "level":"70%"
+      },
+      {
+        "name":"CSS",
+        "level":"60%"
+      },
+      {
+        "name":"ReactJs",
+        "level":"60%"
+      }
+    ]
+  },
+  "portfolio":{
+    "projects": [
+      {
+        "title":"Vessel Tracking System",
+        "category":"Vessel Tracking System for Port of Singapore Authority (PSA)",
+        "image":"",
+        "url":""
+      }
+    ]
+  }
+}
