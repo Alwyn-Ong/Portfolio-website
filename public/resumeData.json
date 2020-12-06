@@ -1,85 +1,126 @@
 {
   "main": {
-    "name":"Alwyn Ong",
-    "description":"Software Developer | Gaming Enthusiast",
-    "image":"profilepic.jpg",
-    "bio":"I am a penultimate Information Systems undergraduate from Singapore Management University (SMU), with an interest in Software Development. I am passionate about technology and using it to solve problems, including my own. Check out my projects below!",
-    "resumedownload":"Alwyn Ong.pdf",
-    "social":[
+    "name": "Alwyn Ong",
+    "description": "Software Developer | Tech Enthusiast | Part-time Gamer",
+    "image": "profilepic.jpg",
+    "bio": "I am a penultimate Information Systems undergraduate from Singapore Management University (SMU), with an interest in Software Development. I am passionate about technology and using it to solve problems, including my own. Check out my projects below!",
+    "resumedownload": "Alwyn Ong.pdf",
+    "social": [
       {
-        "name":"linkedin",
-        "url":"https://www.linkedin.com/in/alwyn-ong/",
-        "className":"fa fa-linkedin"
+        "name": "linkedin",
+        "url": "https://www.linkedin.com/in/alwyn-ong/",
+        "className": "fa fa-linkedin"
       },
       {
-        "name":"github",
-        "url":"https://github.com/Alwyn-Ong",
-        "className":"fa fa-github"
+        "name": "github",
+        "url": "https://github.com/Alwyn-Ong",
+        "className": "fa fa-github"
       },
       {
-        "name":"github",
-        "url":"mailto:alwyn.ong.2018@sis.smu.edu.sg",
-        "className":"fa fa-envelope"
+        "name": "github",
+        "url": "mailto:alwyn.ong.2018@sis.smu.edu.sg",
+        "className": "fa fa-envelope"
       }
     ]
   },
-  "resume":{
-    "education":[
+  "resume": {
+    "education": [
       {
-        "school":"Singapore Management University (SMU)",
-        "degree":"Information Systems",
-        "graduated":"August 2018 - May 2022",
-        "description":"Relevant school activities: Business Intelligence & Analytics - Data Associate Program, Coder's Assembly - Mentor"
+        "school": "Singapore Management University (SMU)",
+        "degree": "Information Systems",
+        "graduated": "August 2018 - May 2022",
+        "description": [
+          "Business Intelligence & Analytics - Data Associate Program",
+          "Coder's Assembly - Mentor"
+        ]
       }
     ],
-    "work":[
+    "work": [
       {
-        "company":"Government Technology Agency (GovTech)",
-        "title":"Developer Intern",
-        "years":"May 2020 - August 2020",
-        "description":"."
+        "company": "Government Technology Agency (GovTech)",
+        "title": "Developer Intern",
+        "years": "May 2020 - August 2020",
+        "description": [
+          "Helped to port files and systems to new SharePoint Team Site",
+          "Setup, managed and regularly updated information system for tech leads and recruiters to support recruitment event",
+          "Setup NLP (Sentiment Analysis, Removal of Stop Words) for form responses, automating scripts to call Google Cloud APIs via Google Cloud Platform (JavaScript)",
+          "Developed SharePoint WebPart to help with various use cases (SharePoint Framework (SPFx), JavaScript)",
+          "Developed system to track candidates utilising SharePoint platform (SharePoint REST APIs, JavaScript/jQuery)",
+          "Wrote various scripts to help automate tasks (VBA)"
+        ]
       },
       {
-        "company":"CoXPlore",
-        "title":"Information Technology Intern",
-        "years":"Dec 2019",
-        "description":"."
+        "company": "CoXPlore",
+        "title": "Information Technology Intern",
+        "years": "Dec 2019",
+        "description": [
+          "Leveraged existing framework to fix and improve upon company website, fixing existing bugs and publishing new pages",
+          "Setup Google Analytics on website and setup dashboard to collect data for analysis on user demographics",
+          "Setup an automatic email reply system for new users to receive a confirmation email",
+          "Refined and improved on business model for new feature on mobile app",
+          "Helped with ideation for customer acquisition for mobile app",
+          "Analyse current customer journey to come up with business process workflow model for process analysis"
+        ]
       }
     ],
-    "skills":[
+    "skills": [
       {
-        "name":"Python",
-        "level":"80%"
+        "name": "Python",
+        "level": "80%"
       },
       {
-        "name":"JAVA",
-        "level":"80%"
+        "name": "JAVA",
+        "level": "80%"
       },
       {
-        "name":"MySQL",
-        "level":"80%"
+        "name": "MySQL",
+        "level": "80%"
       },
       {
-        "name":"PHP",
-        "level":"70%"
+        "name": "PHP",
+        "level": "70%"
       },
       {
-        "name":"CSS",
-        "level":"60%"
+        "name": "JavaScript",
+        "level": "65%"
       },
       {
-        "name":"ReactJs",
-        "level":"60%"
+        "name": "CSS",
+        "level": "60%"
+      },
+      {
+        "name": "HTML",
+        "level": "60%"
       }
-    ]
-  },
-  "portfolio":{
+    ],
     "projects": [
       {
-        "title":"Vessel Tracking System",
-        "category":"Vessel Tracking System for Port of Singapore Authority (PSA)",
-        "image":"",
-        "url":""
+        "title": "Vessel Tracking System",
+        "description": "Vessel Tracking System for Port of Singapore Authority (PSA)",
+        "github": "",
+        "link": "",
+        "technology": ["REST API", "Spring Boot", "SwaggerUI", "Maven", "JavaScript"]
+      },
+      {
+        "title": "FBS Booker",
+        "description": "Tool to automate booking of facilities in SMU's Facility Booking System (FBS)",
+        "github": "",
+        "link": "",
+        "technology": ["Python (Selenium)", "Automation"]
+      },
+      {
+        "title": "SGLoveLah",
+        "description": "Sample dating website, blurs images and only unblurs upon both users pressing a \"Ready Button\" ",
+        "github": "https://github.com/Alwyn-Ong/ESD",
+        "link": "",
+        "technology": ["REST API", "JavaScript", "Python (Flask)", "AMQP (RabbitMQ)", "Docker", "Python (Socket.IO)"]
+      },
+      {
+        "title": "Sample E-Commerce Website - In Progress",
+        "description": "Allows users to upload their products into their shops for display",
+        "github": "",
+        "link": "",
+        "technology": ["REST API", "ReactJS", "NodeJS", "MongoDB"]
       }
     ]
   }

@@ -231,14 +231,14 @@ ul#nav li.current a { color: #fe6928; }
 /* ------------------------------------------------------------------ */
 
 #resume {
-   background: #fff;
+   background: #fff !important; 
    padding-top: 90px;
    padding-bottom: 72px;
    overflow: hidden;
 }
 
-#resume a, #resume a:visited  { color: #0762f9; }
-#resume a:hover, #resume a:focus { color: #313131; }
+#resume a, #resume a:visited { color: #313131; }
+#resume a:hover, #resume a:focus  { color: #0762f9; }
 
 #resume h1 {
    font: 18px/24px 'opensans-bold', sans-serif;
@@ -1017,8 +1017,8 @@ footer .social-links li:first-child { margin-left: 0; }
    margin-right: 15px;
 }
 .project-btn{
-   background-color: #1abc9c !important;
+   background-color: #c2c7c6 !important;
 }
 .github-btn{
-   background-color: #34495e !important;
+   background-color: #94979b !important;
 }

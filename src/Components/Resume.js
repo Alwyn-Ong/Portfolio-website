@@ -21,7 +21,9 @@ class Resume extends Component {
               {education.degree} <span>&bull;</span>
               <em className="date">{education.graduated}</em>
             </p>
-            <p>{education.description}</p>
+            {education.description.map((activity, i) => {
+              return <li key={i}>{activity}</li>;
+            })}
           </div>
         );
       });
@@ -33,7 +35,10 @@ class Resume extends Component {
               {work.title}
               <span>&bull;</span> <em className="date">{work.years}</em>
             </p>
-            <p>{work.description}</p>
+            {work.description.map((activity, i) => {
+              return <li key={i}>{activity}</li>;
+            })}
+            <br></br>
           </div>
         );
       });
@@ -53,15 +58,23 @@ class Resume extends Component {
           </li>
         );
       });
-      var projects = this.props.data.work.map(function (work) {
+
+      var projects = this.props.data.projects.map(function (project) {
         return (
-          <div key={work.company}>
-            <h3>{work.company}</h3>
-            <p className="info">
-              {work.title}
-              <span>&bull;</span> <em className="date">{work.years}</em>
-            </p>
-            <p>{work.description}</p>
+          <div key={project.title}>
+            <h3>{project.title}</h3>
+            <p>{project.technology.join(" | ")}</p>
+            <p>{project.description}</p>
+            {project.link != "" && (
+              <a href={project.link} className="button btn project-btn">
+                <i className="fa fa-book"></i>Project
+              </a>
+            )}
+            {project.github != "" && (
+              <a href={project.github} className="button btn github-btn">
+                <i className="fa fa-github"></i>Github
+              </a>
+            )}
           </div>
         );
       });
@@ -109,7 +122,7 @@ class Resume extends Component {
           </div>
         </div>
 
-        {/* <div className="row work">
+        <div className="row work">
           <div className="three columns header-col">
             <h1>
               <span>Projects</span>
@@ -117,7 +130,7 @@ class Resume extends Component {
           </div>
 
           <div className="nine columns main-col">{projects}</div>
-        </div> */}
+        </div>
       </section>
     );
   }
