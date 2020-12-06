@@ -2,10 +2,10 @@ import React, { Component } from "react";
 
 class Resume extends Component {
   getRandomColor() {
-    var letters = "0123456789ABCDEF";
     var color = "#";
-    for (var i = 0; i < 6; i++) {
-      color += letters[Math.floor(Math.random() * 16)];
+    for (var i = 0; i< 3; i++) {
+      let randomColour = Math.floor(Math.random()*56)+175;
+      color += randomColour.toString(16);
     }
     return color;
   }
