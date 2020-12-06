@@ -9,12 +9,12 @@ class Resume extends Component {
             <h3>{project.title}</h3>
             <p>{project.technology.join(" | ")}</p>
             <p>{project.description}</p>
-            {project.link != "" && (
+            {project.link !== "" && (
               <a href={project.link} className="button btn project-btn">
                 <i className="fa fa-book"></i>Project
               </a>
             )}
-            {project.github != "" && (
+            {project.github !== "" && (
               <a href={project.github} className="button btn github-btn">
                 <i className="fa fa-github"></i>Github
               </a>
