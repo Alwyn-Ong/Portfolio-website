@@ -5,18 +5,18 @@ class Resume extends Component {
     if (this.props.data) {
       var projects = this.props.data.projects.map(function (project) {
         return (
-          <div key={project.title}>
+          <div key={project.title} className={"projects"}>
             <h3>{project.title}</h3>
             <p>{project.technology.join(" | ")}</p>
             <p>{project.description}</p>
             {project.link !== "" && (
-              <a href={project.link} className="button btn project-btn">
-                <i className="fa fa-book"></i>Project
+              <a href={project.link} className="button btn project-btn" target="_blank">
+                <i className="fa fa-book"></i> Demo
               </a>
             )}
             {project.github !== "" && (
-              <a href={project.github} className="button btn github-btn">
-                <i className="fa fa-github"></i>Github
+              <a href={project.github} className="button btn github-btn" target="_blank">
+                <i className="fa fa-github"></i> Github
               </a>
             )}
           </div>
