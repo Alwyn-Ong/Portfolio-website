@@ -117,10 +117,10 @@
       },
       {
         "title": "FBS Booker",
-        "description": "Tool to automate booking of facilities in SMU's Facility Booking System (FBS)",
-        "github": "",
+        "description": "Tool to automate booking of facilities in SMU's Facility Booking System (FBS). A video demo can be found on the Github link.",
+        "github": "https://github.com/Alwyn-Ong/FBS-Auto-Booker",
         "link": "",
-        "technology": ["Python (Selenium)", "Automation"]
+        "technology": ["Python (Selenium)", "Automation", "Web Scraping"]
       },
       {
         "title": "SGLoveLah",
