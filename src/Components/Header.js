@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import ParticlesBg from "particles-bg";
+import ScrollAnimation from "react-animate-on-scroll";
 
 class Header extends Component {
   render() {
@@ -64,7 +65,9 @@ class Header extends Component {
 
         <div className="row banner">
           <div className="banner-text">
-            <h1 className="responsive-headline">{name}</h1>
+            <ScrollAnimation animateIn="bounce" animatePreScroll={true}>
+              <h1 className="responsive-headline">{name}</h1>
+            </ScrollAnimation>
             <h3>{description}</h3>
             <hr />
             <ul className="social">
