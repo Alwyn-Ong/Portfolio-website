@@ -4,6 +4,8 @@
   "homepage": "./",
   "private": true,
   "dependencies": {
+    "@material-ui/core": "^4.11.4",
+    "@material-ui/icons": "^4.11.2",
     "anix": "^0.3.3",
     "jquery": "^3.2.1",
     "particles-bg": "^2.3.12",
