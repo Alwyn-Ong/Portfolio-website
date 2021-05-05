@@ -48,7 +48,8 @@
           "Setup, managed and regularly updated information system for tech leads and recruiters to support recruitment event",
           "Helped to port files and systems to new SharePoint Team Site",
           "Wrote various scripts to help automate tasks (VBA)"
-        ]
+        ],
+        "logo": "logo_govtech_hort.gif"
       },
       {
         "company": "CoXPlore",
@@ -61,7 +62,8 @@
           "Analyse current customer journey to come up with business process workflow model for process analysis",
           "Refined and improved on business model for new feature on mobile app",
           "Helped with ideation for customer acquisition for mobile app"
-        ]
+        ],
+        "logo": "logo_CoXplore.png"
       }
     ],
     "skills": [
