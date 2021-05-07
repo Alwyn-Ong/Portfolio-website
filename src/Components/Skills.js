@@ -1,10 +1,11 @@
 import React, { Component } from "react";
+import ScrollAnimation from "react-animate-on-scroll";
 
 class Resume extends Component {
   getRandomColor() {
     var color = "#";
-    for (var i = 0; i< 3; i++) {
-      let randomColour = Math.floor(Math.random()*56)+175;
+    for (var i = 0; i < 3; i++) {
+      let randomColour = Math.floor(Math.random() * 56) + 175;
       color += randomColour.toString(16);
     }
     return color;
@@ -38,11 +39,13 @@ class Resume extends Component {
             </h1>
           </div>
 
-          <div className="nine columns main-col">
-            <div className="bars">
-              <ul className="skills">{skills}</ul>
+          <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut">
+            <div className="nine columns main-col">
+              <div className="bars">
+                <ul className="skills">{skills}</ul>
+              </div>
             </div>
-          </div>
+          </ScrollAnimation>
         </div>
       </section>
     );

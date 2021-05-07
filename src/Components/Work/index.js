@@ -8,10 +8,10 @@ const Resume = (props) => {
     var work = props.data.work.map(function (work) {
       return (
         <div key={work.company}>
-          <ScrollAnimation animateIn="fadeInDown">
-          <div className="company-logo">
-            <img src={`/images/${work.logo}`} />
-          </div>
+          <ScrollAnimation animateIn="fadeIn">
+            <div className="company-logo">
+              <img src={`/images/${work.logo}`} />
+            </div>
             <h3>{work.company}</h3>
             <p className="info">
               {work.title}
