@@ -1,5 +1,4 @@
-import { Avatar, Grid } from "@material-ui/core";
-import React, { Component } from "react";
+import React from "react";
 // import "./styles.css";
 import ScrollAnimation from "react-animate-on-scroll";
 
@@ -10,7 +9,7 @@ const Resume = (props) => {
         <div key={work.company}>
           <ScrollAnimation animateIn="fadeIn">
             <div className="company-logo">
-              <img src={`/images/${work.logo}`} />
+              <img src={`/images/${work.logo}`} alt=""/>
             </div>
             <h3>{work.company}</h3>
             <p className="info">
