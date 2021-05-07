@@ -16,16 +16,18 @@ class Resume extends Component {
       var skills = this.props.data.skills.map((skills) => {
         var className = "bar-expand " + skills.name.toLowerCase();
         return (
-          <li key={skills.name}>
-            <span
-              style={{
-                width: skills.level,
-                backgroundColor: this.getRandomColor(),
-              }}
-              className={className}
-            ></span>
-            <em>{skills.name}</em>
-          </li>
+          <ScrollAnimation animateIn="fadeIn">
+            <li key={skills.name}>
+              <span
+                style={{
+                  width: skills.level,
+                  backgroundColor: this.getRandomColor(),
+                }}
+                className={className}
+              ></span>
+              <em>{skills.name}</em>
+            </li>
+          </ScrollAnimation>
         );
       });
     }
@@ -39,13 +41,11 @@ class Resume extends Component {
             </h1>
           </div>
 
-          <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut">
-            <div className="nine columns main-col">
-              <div className="bars">
-                <ul className="skills">{skills}</ul>
-              </div>
+          <div className="nine columns main-col">
+            <div className="bars">
+              <ul className="skills">{skills}</ul>
             </div>
-          </ScrollAnimation>
+          </div>
         </div>
       </section>
     );
