@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import ScrollAnimation from "react-animate-on-scroll";
 
 class Resume extends Component {
   render() {
@@ -28,11 +29,13 @@ class Resume extends Component {
             </h1>
           </div>
 
-          <div className="nine columns main-col">
-            <div className="row item">
-              <div className="twelve columns">{education}</div>
+          <ScrollAnimation animateIn="fadeIn">
+            <div className="nine columns main-col">
+              <div className="row item">
+                <div className="twelve columns">{education}</div>
+              </div>
             </div>
-          </div>
+          </ScrollAnimation>
         </div>
       </div>
     );
