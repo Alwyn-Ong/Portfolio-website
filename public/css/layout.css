@@ -62,6 +62,9 @@ header .banner-text h1 {
    color: #fff;
    letter-spacing: -2px;
    margin: 0 auto 18px auto;
+   /* background: -webkit-linear-gradient(#eee, rgb(100, 100, 100), rgb(155, 114, 114)); */
+  /* -webkit-background-clip: text; */
+  /* -webkit-text-fill-color: transparent; */
 }
 header .banner-text h3 {
    font: 18px/1.9em 'librebaskerville-regular', serif;
