@@ -98,6 +98,13 @@
     ],
     "projects": [
       {
+        "title": "Self Service Portal for Training Platform for VMWare",
+        "description": "Self Service Portal to manage user access and automate dissemination of lab materials for use during workshops",
+        "github": "",
+        "link": "",
+        "technology": ["REST API", "Spring Boot", "SwaggerUI", "Maven", "ReactJs"]
+      },
+      {
         "title": "Vessel Tracking System",
         "description": "Vessel Tracking System for Port of Singapore Authority (PSA)",
         "github": "",
