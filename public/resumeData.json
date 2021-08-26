@@ -38,6 +38,26 @@
     ],
     "work": [
       {
+        "company": "Zendesk",
+        "title": "Software Engineer Intern",
+        "years": "Aug 2021 - Present",
+        "description": [
+        ],
+        "logo": "logo_Zendesk.png"
+      },
+      {
+        "company": "DBS Bank",
+        "title": "Software Engineer Intern - Young SEEDer Program",
+        "years": "May 2021 - July 2021",
+        "description": [
+          "Involved in building microservices exposing legacy systems via REST APIs in Java Spring Boot, connecting to MariaDB ",
+          "Performed Spring Boot migration update of various microservices",
+          "Conducted research and proposed solution for migrating from Jhipster to Spring Cloud ",
+          "Improved CI/CD process via Jenkins for Python Flask module "
+        ],
+        "logo": "logo_DBS.png"
+      },
+      {
         "company": "Government Technology Agency (GovTech)",
         "title": "Developer Intern",
         "years": "May 2020 - August 2020",
@@ -97,6 +117,13 @@
       }
     ],
     "projects": [
+      {
+        "title": "URL Shortener",
+        "description": "Web application to shorten urls",
+        "github": "https://github.com/Alwyn-Ong/URL-Shortener",
+        "link": "http://13.250.25.22:3000/",
+        "technology": ["REST API", "Spring Boot", "Maven", "ReactJs", "Docker", "AWS"]
+      },
       {
         "title": "Self Service Portal for Training Platform for VMWare",
         "description": "Self Service Portal to manage user access and automate dissemination of lab materials for use during workshops",
