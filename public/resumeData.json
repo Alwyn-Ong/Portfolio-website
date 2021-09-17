@@ -121,7 +121,7 @@
         "title": "URL Shortener",
         "description": "Web application to shorten urls",
         "github": "https://github.com/Alwyn-Ong/URL-Shortener",
-        "link": "http://13.250.25.22:3000/",
+        "link": "",
         "technology": ["REST API", "Spring Boot", "Maven", "ReactJs", "Docker", "AWS"]
       },
       {
