@@ -8,14 +8,6 @@
 .company {
   animation: 1s ease-out 0s 1 slideInFromBottom;
 }
-/* 
-.company::before {
-  opacity: 0;
-}
-
-.company::after {
-  opacity: 1;
-} */
 
 @keyframes slideInFromBottom {
   0% {
