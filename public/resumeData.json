@@ -3,7 +3,7 @@
     "name": "Alwyn Ong",
     "description": "Software Developer | Tech Enthusiast | Part-time Gamer",
     "image": "profilepic.jpg",
-    "bio": "I am a penultimate Information Systems undergraduate from Singapore Management University (SMU), with an interest in Software Development. I am passionate about technology and using it to solve problems, including my own. Check out my projects below!",
+    "bio": "I am a final year Information Systems undergraduate from Singapore Management University (SMU), with an interest in Software Development. I am passionate about technology and using it to solve problems, including my own. Check out my projects below!",
     "resumedownload": "Alwyn Ong.pdf",
     "social": [
       {
@@ -18,7 +18,7 @@
       },
       {
         "name": "github",
-        "url": "mailto:alwyn.ong.2018@sis.smu.edu.sg",
+        "url": "mailto:alwyn.ong.2018@scis.smu.edu.sg",
         "className": "fa fa-envelope"
       }
     ]
@@ -40,8 +40,13 @@
       {
         "company": "Zendesk",
         "title": "Software Engineer Intern",
-        "years": "Aug 2021 - Present",
+        "years": "Aug 2021 - Dec 2021",
         "description": [
+          "Created new model and REST endpoint in Flask application, triggering RPC calls to Twisted application and vice versa",
+          "Improved deploy process for Flask application, reducing deploy time by 77% (Python Fabric), improving reliability",
+          "Removed fully rolled out feature gates, improving operability, performance as well as reducing code complexity",
+          "Improved event tagging on Sentry connected applications, improving monitoring through more detailed logging",
+          "Added new model fields for Flask app, updated React components to create/edit, display and search by new fields"
         ],
         "logo": "logo_Zendesk.png"
       },
@@ -122,49 +127,88 @@
         "description": "Web application to shorten urls",
         "github": "https://github.com/Alwyn-Ong/URL-Shortener",
         "link": "",
-        "technology": ["REST API", "Spring Boot", "Maven", "ReactJs", "Docker", "AWS"]
+        "technology": [
+          "REST API",
+          "Spring Boot",
+          "Maven",
+          "ReactJs",
+          "Docker",
+          "AWS"
+        ]
       },
       {
         "title": "Self Service Portal for Training Platform for VMWare",
         "description": "Self Service Portal to manage user access and automate dissemination of lab materials for use during workshops",
         "github": "",
         "link": "",
-        "technology": ["REST API", "Spring Boot", "SwaggerUI", "Maven", "ReactJs"]
+        "technology": [
+          "REST API",
+          "Spring Boot",
+          "SwaggerUI",
+          "Maven",
+          "ReactJs"
+        ]
       },
       {
         "title": "Vessel Tracking System",
         "description": "Vessel Tracking System for Port of Singapore Authority (PSA)",
         "github": "",
         "link": "",
-        "technology": ["REST API", "Spring Boot", "SwaggerUI", "Maven", "JavaScript"]
+        "technology": [
+          "REST API",
+          "Spring Boot",
+          "SwaggerUI",
+          "Maven",
+          "JavaScript"
+        ]
       },
       {
         "title": "Mahjong Score Calculator",
         "description": "A website to help you calculate the score (tai), based on your current tiles.",
         "github": "https://github.com/gilesccs/MahjongScoreCalculator",
         "link": "https://mahjong-calculator.herokuapp.com/",
-        "technology": ["JavaScript", "ReactJS", "Material-UI", "Toastify"]
+        "technology": [
+          "JavaScript",
+          "ReactJS",
+          "Material-UI",
+          "Toastify"
+        ]
       },
       {
         "title": "Portfolio Website",
         "description": "A website to showcase my portfolio.",
         "github": "https://github.com/Alwyn-Ong/Portfolio-website",
         "link": "",
-        "technology": ["JavaScript", "ReactJS", "ParticlesBg"]
+        "technology": [
+          "JavaScript",
+          "ReactJS",
+          "ParticlesBg"
+        ]
       },
       {
         "title": "FBS Booker",
         "description": "Tool to automate booking of facilities in SMU's Facility Booking System (FBS). A video demo can be found on the Github link.",
         "github": "https://github.com/Alwyn-Ong/FBS-Auto-Booker",
         "link": "",
-        "technology": ["Python (Selenium)", "Automation", "Web Scraping"]
+        "technology": [
+          "Python (Selenium)",
+          "Automation",
+          "Web Scraping"
+        ]
       },
       {
         "title": "SGLoveLah",
         "description": "Sample dating website, blurs images and only unblurs upon both users pressing a \"Ready Button\" ",
         "github": "https://github.com/Alwyn-Ong/ESD",
         "link": "",
-        "technology": ["REST API", "JavaScript", "Python (Flask)", "AMQP (RabbitMQ)", "Docker", "Python (Socket.IO)"]
+        "technology": [
+          "REST API",
+          "JavaScript",
+          "Python (Flask)",
+          "AMQP (RabbitMQ)",
+          "Docker",
+          "Python (Socket.IO)"
+        ]
       }
     ]
   }
