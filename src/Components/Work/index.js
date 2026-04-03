@@ -6,8 +6,9 @@ const Resume = (props) => {
   if (props.data) {
     var work = props.data.work.map(function (work) {
       return (
-        <div key={work.company}>
-          <ScrollAnimation animateIn="fadeIn">
+        <div key={work.company + work.title}>
+        <ScrollAnimation animateIn="fadeIn">
+          <div>
             <div className="company-logo">
               <img src={`/images/${work.logo}`} alt=""/>
             </div>
@@ -16,12 +17,13 @@ const Resume = (props) => {
               {work.title}
               <span>&bull;</span> <em className="date">{work.years}</em>
             </p>
-            {work.description.map((activity, i) => {
+            {(work.description || []).map((activity, i) => {
               return <li key={i}>{activity}</li>;
             })}
             <br></br>
-          </ScrollAnimation>
-        </div>
+          </div>
+        </ScrollAnimation>
+      </div>
       );
     });
   }

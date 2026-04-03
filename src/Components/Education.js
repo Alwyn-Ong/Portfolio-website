@@ -12,7 +12,7 @@ class Resume extends Component {
               {education.degree} <span>&bull;</span>
               <em className="date">{education.graduated}</em>
             </p>
-            {education.description.map((activity, i) => {
+            {(education.description || []).map((activity, i) => {
               return <li key={i}>{activity}</li>;
             })}
           </div>
