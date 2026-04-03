@@ -6,8 +6,9 @@ class Resume extends Component {
     if (this.props.data) {
       var projects = this.props.data.projects.map(function (project) {
         return (
+          <div key={project.title}>
           <ScrollAnimation animateIn="fadeIn">
-            <div key={project.title} className={"projects"}>
+            <div className={"projects"}>
               <h3>{project.title}</h3>
               <p>{project.technology.join(" | ")}</p>
               <p>{project.description}</p>
@@ -31,6 +32,7 @@ class Resume extends Component {
               )}
             </div>
           </ScrollAnimation>
+          </div>
         );
       });
     }
