@@ -3,8 +3,8 @@
     "name": "Alwyn Ong",
     "description": "Software Developer | Tech Enthusiast | Part-time Gamer",
     "image": "profilepic.jpg",
-    "bio": "I am a final year Information Systems undergraduate from Singapore Management University (SMU), with an interest in Software Development. I am passionate about technology and using it to solve problems, including my own. Check out my projects below!",
-    "resumedownload": "Alwyn Ong.pdf",
+    "bio": "I am a Software Engineer and am passionate about technology and using it to solve problems, including my own. Check out my projects below!",
+    "resumedownload": "",
     "social": [
       {
         "name": "linkedin",
@@ -15,11 +15,6 @@
         "name": "github",
         "url": "https://github.com/Alwyn-Ong",
         "className": "fa fa-github"
-      },
-      {
-        "name": "github",
-        "url": "mailto:REDACTED",
-        "className": "fa fa-envelope"
       }
     ]
   },
@@ -37,6 +32,12 @@
       }
     ],
     "work": [
+      {
+        "company": "Zendesk",
+        "title": "Software Engineer",
+        "years": "June 2022 - Present",
+        "logo": "logo_Zendesk.png"
+      },
       {
         "company": "Zendesk",
         "title": "Software Engineer Intern",
@@ -166,7 +167,7 @@
         "title": "Mahjong Score Calculator",
         "description": "A website to help you calculate the score (tai), based on your current tiles.",
         "github": "https://github.com/gilesccs/MahjongScoreCalculator",
-        "link": "https://mahjong-calculator.herokuapp.com/",
+        "link": "",
         "technology": [
           "JavaScript",
           "ReactJS",
