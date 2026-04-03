@@ -1,7 +1,6 @@
 import React from "react";
 import "react-typist/dist/Typist.css"
 import Typist from "react-typist";
-import 'babel-polyfill'
 
 const Name = (props) => {
   return (
