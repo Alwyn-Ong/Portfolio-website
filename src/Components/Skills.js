@@ -16,8 +16,8 @@ class Resume extends Component {
       var skills = this.props.data.skills.map((skills) => {
         var className = "bar-expand " + skills.name.toLowerCase();
         return (
-          <ScrollAnimation animateIn="fadeIn">
-            <li key={skills.name}>
+          <li key={skills.name}>
+            <ScrollAnimation animateIn="fadeIn">
               <span
                 style={{
                   width: skills.level,
@@ -26,8 +26,8 @@ class Resume extends Component {
                 className={className}
               ></span>
               <em>{skills.name}</em>
-            </li>
-          </ScrollAnimation>
+            </ScrollAnimation>
+          </li>
         );
       });
     }
