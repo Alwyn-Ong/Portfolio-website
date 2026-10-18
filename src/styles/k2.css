@@ -369,6 +369,8 @@
 .project h1 { font-size: 48px; }
 .project-problem { font-size: 18px; max-width: 60ch; }
 .project-scene { grid-area: scene; aspect-ratio: 80 / 45; box-shadow: 0 0 0 3px var(--brown); margin: 3px; filter: var(--shadow); }
+.project-scene-demo { aspect-ratio: auto; display: flex; justify-content: center; background: var(--ink); padding: 16px; }
+.project-demo { height: min(70vh, 640px); width: auto; max-width: 100%; border-radius: 16px; }
 .job-card { grid-area: card; align-self: start; position: sticky; top: 96px; }
 .facts { margin: 0; display: grid; gap: 6px; }
 .facts dt { font: 600 14px/1.2 var(--font-px); color: var(--muted); }

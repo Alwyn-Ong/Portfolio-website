@@ -21,6 +21,7 @@ function ProjectCard({ p }) {
         <div className="tags">{p.technology.map((t) => <Tag key={t}>{t}</Tag>)}</div>
       )}
       <div className="card-cta">
+        {p.demo && <Button to={`/projects/${p.slug}`} variant="primary">Watch demo</Button>}
         {p.link && <Button href={p.link} variant="primary">Visit site</Button>}
         {p.github && <Button href={p.github}>View on GitHub</Button>}
         {priv && <span className="card-private">Private repo · ask me about it</span>}

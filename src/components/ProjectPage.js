@@ -4,7 +4,7 @@ import PixelArt, { gridToCssUrl } from '../pixel/PixelArt';
 import { benchScene } from '../pixel/scenes';
 import { grassTile } from '../pixel/sprites';
 import { Panel, Button, Tag, Kicker, Bullets } from './ui';
-import { PLACES, isPrivate } from '../data';
+import { PLACES, isPrivate, video } from '../data';
 
 const SCENES = { laptop: benchScene('laptop'), crate: benchScene('crate') };
 const SCENE_TITLES = { laptop: 'A laptop on a workbench', crate: 'A padlocked crate on a workbench' };
@@ -104,9 +104,15 @@ export default function ProjectPage({ projects }) {
           {p.builtFor && <p className="built-for">Built for {p.builtFor}</p>}
           {p.problem && <p className="problem project-problem"><strong>The problem:</strong> {p.problem}</p>}
         </header>
-        <div className="project-scene">
-          <PixelArt grid={SCENES[scene]} width="100%" height="100%" title={SCENE_TITLES[scene]} />
-        </div>
+        {p.demo ? (
+          <div className="project-scene project-scene-demo">
+            <video className="project-demo" src={video(p.demo)} autoPlay muted loop playsInline controls aria-label={`${p.title} demo`} />
+          </div>
+        ) : (
+          <div className="project-scene">
+            <PixelArt grid={SCENES[scene]} width="100%" height="100%" title={SCENE_TITLES[scene]} />
+          </div>
+        )}
         <JobCard p={p} priv={priv} />
         <div className="project-body">
           {p.description && (

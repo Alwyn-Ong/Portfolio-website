@@ -133,6 +133,31 @@
     ],
     "projects": [
       {
+        "title": "Stocktaker",
+        "slug": "stocktaker",
+        "builtFor": "a department's internal stock-take checks",
+        "problem": "Stock checks were done by hand on paper, then reconciled manually.",
+        "description": "Android app for physical stock checks: scan each item's barcode at a location and submit what was found to a shared master inventory Google Sheet.",
+        "github": "https://github.com/Alwyn-Ong/stocktaker",
+        "link": "",
+        "demo": "stocktaker-demo.mp4",
+        "technology": [
+          "React Native",
+          "Expo",
+          "TypeScript",
+          "Zustand",
+          "Google Sheets API",
+          "Google Drive API",
+          "Jest"
+        ],
+        "howItWorks": [
+          "Sign in with Google, pick a location, and the app loads that location's items from the master sheet.",
+          "Scan each barcode with the camera; items that belong to another location are flagged instead of being lost.",
+          "Submit writes what was found back to the master sheet, and unknown barcodes go to a separate tab.",
+          "Upload saves a CSV report of the check to a shared Drive folder."
+        ]
+      },
+      {
         "title": "URL Shortener",
         "slug": "url-shortener",
         "description": "Web application to shorten urls",

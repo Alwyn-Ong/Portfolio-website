@@ -42,6 +42,7 @@ Each project gets a card on the home page and its own page at `/projects/<slug>`
 | `github`, `link` | | Buttons. If both are empty, the project counts as private. |
 | `private` | | Override for the private check above |
 | `scene` | | `laptop` or `crate`. Default: `crate` if private, else `laptop`. |
+| `demo` | | Demo video in `public/videos/` (mp4). Shown on the project page in place of the pixel scene; the card gets a "Watch demo" button. |
 
 ## Adding a project
 ```json

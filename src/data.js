@@ -1,6 +1,7 @@
 import { ICONS, icon, GREEN } from './pixel/sprites';
 
 export const asset = (file) => import.meta.env.BASE_URL + 'images/' + file;
+export const video = (file) => import.meta.env.BASE_URL + 'videos/' + file;
 
 // A project is private when it has no public repo or link, unless `private` says otherwise.
 export const isPrivate = (p) => p.private ?? (!p.github && !p.link);

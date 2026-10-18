@@ -101,6 +101,7 @@
               "metric": { "type": "string", "description": "A real, measured result. Omit if there isn't one." },
               "howItWorks": { "type": "array", "items": { "type": "string" } },
               "learned": { "type": "array", "items": { "type": "string" } },
+              "demo": { "type": "string", "description": "Demo video in public/videos/ (mp4). Shown on the project page in place of the pixel scene." },
               "private": { "type": "boolean", "description": "Code can't be shared. Defaults to true when github and link are both empty." },
               "scene": { "enum": ["laptop", "crate"], "description": "Pixel scene on the project page. Defaults to crate if private, else laptop." }
             }
