@@ -1,4 +1,13 @@
 {
+  "$schema": "../schema/resumeData.schema.json",
+  "version": 2,
+  "sections": [
+    "about",
+    "work",
+    "education",
+    "skills",
+    "projects"
+  ],
   "main": {
     "name": "Alwyn Ong",
     "description": "Software Developer | Tech Enthusiast | Part-time Gamer",
@@ -125,6 +134,7 @@
     "projects": [
       {
         "title": "URL Shortener",
+        "slug": "url-shortener",
         "description": "Web application to shorten urls",
         "github": "https://github.com/Alwyn-Ong/URL-Shortener",
         "link": "",
@@ -139,6 +149,7 @@
       },
       {
         "title": "Self Service Portal for Training Platform for VMWare",
+        "slug": "vmware-self-service-portal",
         "description": "Self Service Portal to manage user access and automate dissemination of lab materials for use during workshops",
         "github": "",
         "link": "",
@@ -152,6 +163,7 @@
       },
       {
         "title": "Vessel Tracking System",
+        "slug": "psa-vessel-tracking",
         "description": "Vessel Tracking System for Port of Singapore Authority (PSA)",
         "github": "",
         "link": "",
@@ -165,6 +177,7 @@
       },
       {
         "title": "Mahjong Score Calculator",
+        "slug": "mahjong-score-calculator",
         "description": "A website to help you calculate the score (tai), based on your current tiles.",
         "github": "https://github.com/gilesccs/MahjongScoreCalculator",
         "link": "",
@@ -177,6 +190,7 @@
       },
       {
         "title": "Portfolio Website",
+        "slug": "portfolio-website",
         "description": "A website to showcase my portfolio.",
         "github": "https://github.com/Alwyn-Ong/Portfolio-website",
         "link": "",
@@ -188,6 +202,7 @@
       },
       {
         "title": "FBS Booker",
+        "slug": "fbs-booker",
         "description": "Tool to automate booking of facilities in SMU's Facility Booking System (FBS). A video demo can be found on the Github link.",
         "github": "https://github.com/Alwyn-Ong/FBS-Auto-Booker",
         "link": "",
@@ -199,6 +214,7 @@
       },
       {
         "title": "SGLoveLah",
+        "slug": "sglovelah",
         "description": "Sample dating website, blurs images and only unblurs upon both users pressing a \"Ready Button\" ",
         "github": "https://github.com/Alwyn-Ong/ESD",
         "link": "",

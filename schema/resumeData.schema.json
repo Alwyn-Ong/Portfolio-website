@@ -1,0 +1,112 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Portfolio resume data (v2)",
+  "type": "object",
+  "required": ["version", "main", "resume"],
+  "additionalProperties": false,
+  "properties": {
+    "$schema": { "type": "string" },
+    "version": { "const": 2 },
+    "sections": {
+      "description": "Home page sections, in display order. Also drives the nav. Omit a section to hide it.",
+      "type": "array",
+      "uniqueItems": true,
+      "items": { "enum": ["about", "work", "projects", "skills", "education"] }
+    },
+    "main": {
+      "type": "object",
+      "required": ["name"],
+      "additionalProperties": false,
+      "properties": {
+        "name": { "type": "string" },
+        "description": { "type": "string", "description": "Tagline under the name." },
+        "image": { "type": "string", "description": "File in public/images/." },
+        "bio": { "type": "string" },
+        "resumedownload": { "type": "string", "description": "URL to a resume PDF. Empty or omitted hides the button." },
+        "social": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["name", "url"],
+            "additionalProperties": false,
+            "properties": {
+              "name": { "type": "string", "description": "Also picks the icon: linkedin, github, email, website." },
+              "url": { "type": "string" },
+              "className": { "type": "string", "description": "Deprecated (old Font Awesome class). Ignored by the new UI." }
+            }
+          }
+        }
+      }
+    },
+    "resume": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "education": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["school"],
+            "additionalProperties": false,
+            "properties": {
+              "school": { "type": "string" },
+              "degree": { "type": "string" },
+              "graduated": { "type": "string" },
+              "description": { "type": "array", "items": { "type": "string" } }
+            }
+          }
+        },
+        "work": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["company", "title"],
+            "additionalProperties": false,
+            "properties": {
+              "company": { "type": "string" },
+              "title": { "type": "string" },
+              "years": { "type": "string" },
+              "logo": { "type": "string", "description": "File in public/images/." },
+              "description": { "type": "array", "items": { "type": "string" }, "description": "Bullet points." }
+            }
+          }
+        },
+        "skills": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["name"],
+            "additionalProperties": false,
+            "properties": {
+              "name": { "type": "string" },
+              "level": { "type": "string", "pattern": "^\\d{1,3}%$" }
+            }
+          }
+        },
+        "projects": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["title", "slug"],
+            "additionalProperties": false,
+            "properties": {
+              "title": { "type": "string" },
+              "slug": { "type": "string", "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$", "description": "URL of the project page: /projects/<slug>." },
+              "description": { "type": "string", "description": "Short summary on the card and page." },
+              "github": { "type": "string" },
+              "link": { "type": "string", "description": "Live demo URL." },
+              "technology": { "type": "array", "items": { "type": "string" } },
+              "problem": { "type": "string", "description": "Shown as \"The problem:\"." },
+              "builtFor": { "type": "string", "description": "Who it was built for." },
+              "metric": { "type": "string", "description": "A real, measured result. Omit if there isn't one." },
+              "howItWorks": { "type": "array", "items": { "type": "string" } },
+              "learned": { "type": "array", "items": { "type": "string" } },
+              "private": { "type": "boolean", "description": "Code can't be shared. Defaults to true when github and link are both empty." },
+              "scene": { "enum": ["laptop", "crate"], "description": "Pixel scene on the project page. Defaults to crate if private, else laptop." }
+            }
+          }
+        }
+      }
+    }
+  }
+}
