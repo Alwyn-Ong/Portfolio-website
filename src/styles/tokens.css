@@ -1,0 +1,76 @@
+/* K2 "cozy pixel town" design tokens. */
+:root {
+  --sand: #F6ECD2;
+  --paper: #FFFBF0;
+  --ink: #2B2420;
+  --muted: #5E5248;
+  --brown: #3B2A20;
+  --wood: #8A5A32;
+  --green: #2D6A4F;
+  --green-d: #1B4332;
+  --ok: #2F7D4F;
+  --amber: #9A5B00;
+  --line: #D9C7A0;
+  --tag: #F1E4C6;
+  --sky: #BFE3F2;
+  --grass: #8CC56A;
+  --outline: #2B1E16;
+  --problem: #8A3B2E;
+  --sign-text: #FFF8EA;
+  --fence: #FFF6E3;
+  --chip-bg: #E3F1DA;
+  --chip-line: #9CCB8A;
+  --metric-bg: #FCE9A8;
+  --private-bg: #FCEFD8;
+
+  --font-px: 'Pixelify Sans', ui-monospace, monospace;
+  --font-body: 'Atkinson Hyperlegible', system-ui, sans-serif;
+
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-6: 24px;
+  --space-8: 32px;
+  --space-12: 48px;
+  --gutter: 48px;
+
+  --shadow: drop-shadow(4px 4px 0 rgba(59, 42, 32, .28));
+  /* Stepped pixel corners, 4px. */
+  --step: polygon(4px 0, calc(100% - 4px) 0, calc(100% - 4px) 4px, 100% 4px, 100% calc(100% - 4px),
+    calc(100% - 4px) calc(100% - 4px), calc(100% - 4px) 100%, 4px 100%, 4px calc(100% - 4px),
+    0 calc(100% - 4px), 0 4px, 4px 4px);
+}
+
+@media (max-width: 720px) {
+  :root { --gutter: 16px; }
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+
+html { color-scheme: light; }
+
+body {
+  margin: 0;
+  background: var(--sand);
+  color: var(--ink);
+  font-family: var(--font-body);
+  font-size: 17px;
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--font-px);
+  font-weight: 600;
+  line-height: 1.15;
+  margin: 0;
+}
+
+a { color: var(--green); }
+
+img, svg { display: block; max-width: 100%; }
+
+:focus-visible { outline: 3px solid var(--green); outline-offset: 2px; }
+
+.pixelated { image-rendering: pixelated; }
