@@ -56,12 +56,26 @@
 }
 
 .tag {
+  --tag-step: polygon(3px 0, calc(100% - 3px) 0, calc(100% - 3px) 3px, 100% 3px, 100% calc(100% - 3px),
+    calc(100% - 3px) calc(100% - 3px), calc(100% - 3px) 100%, 3px 100%, 3px calc(100% - 3px),
+    0 calc(100% - 3px), 0 3px, 3px 3px);
+  position: relative;
   display: inline-block;
   font-size: 14px;
   line-height: 1.4;
-  padding: 2px 8px;
+  padding: 3px 10px;
+  background: var(--line);
+  clip-path: var(--tag-step);
+  isolation: isolate;
+}
+/* Fill inset by 1px so the --line background shows as a pixel-stepped border. */
+.tag::before {
+  content: "";
+  position: absolute;
+  inset: 1px;
+  z-index: -1;
   background: var(--tag);
-  box-shadow: inset 0 0 0 1px var(--line);
+  clip-path: var(--tag-step);
 }
 .tags { display: flex; flex-wrap: wrap; gap: 6px; }
 
