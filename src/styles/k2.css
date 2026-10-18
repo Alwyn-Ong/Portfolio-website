@@ -410,6 +410,7 @@
 }
 
 @media (max-width: 720px) {
+  .project-demo { height: auto; max-height: min(70vh, 640px); }
   .hero { padding: 32px 16px 40px; gap: 32px; }
   .hero h1 { font-size: 36px; }
   .hero-title { gap: 14px; }
