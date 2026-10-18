@@ -158,6 +158,30 @@
         ]
       },
       {
+        "title": "Linkbot",
+        "slug": "linkbot",
+        "description": "Telegram bot that saves links shared from mobile (Instagram, TikTok, web articles), extracts structured details with an LLM, stores each one as a note in an Obsidian vault, and answers natural language questions about what's saved.",
+        "github": "https://github.com/Alwyn-Ong/linkbot",
+        "link": "https://alwyn-ong.github.io/linkbot/",
+        "demo": "linkbot-demo.mp4",
+        "technology": [
+          "Python",
+          "python-telegram-bot",
+          "Gemini API",
+          "Jina Reader",
+          "Playwright",
+          "yt-dlp",
+          "Obsidian"
+        ],
+        "howItWorks": [
+          "Share a link to the bot from the phone's share sheet; the page is scraped to clean text (Jina Reader, Playwright for Instagram, yt-dlp for TikTok).",
+          "Gemini extracts structured fields such as name, type, address, hours, date and tags, and the bot shows them for review.",
+          "Reply ok to save, or type a correction and the bot merges it in before saving.",
+          "Each entry is saved as a markdown note with YAML frontmatter in the Obsidian vault.",
+          "Ask a question like \"Japanese restaurants\" and the bot answers from the saved notes."
+        ]
+      },
+      {
         "title": "URL Shortener",
         "slug": "url-shortener",
         "description": "Web application to shorten urls",
