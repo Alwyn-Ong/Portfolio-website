@@ -266,18 +266,21 @@
 
 /* Projects */
 .cards { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
-.card { height: 100%; }
+.card { height: 100%; position: relative; transition: transform .15s ease, filter .15s ease; }
+.card:hover { transform: translateY(-4px) scale(1.03); filter: drop-shadow(6px 12px 0 rgba(59, 42, 32, .28)); }
+@media (prefers-reduced-motion: reduce) { .card { transition: none; } .card:hover { transform: none; } }
 .card .panel-body { display: flex; flex-direction: column; gap: 12px; height: 100%; }
 .card-top { display: flex; align-items: center; justify-content: space-between; gap: 8px; }
 .card-place { display: flex; align-items: center; gap: 6px; font: 600 14px/1.2 var(--font-px); color: var(--muted); }
 .card h3 { font-size: 22px; }
 .card h3 a { color: var(--ink); text-decoration: none; }
-.card h3 a:hover { color: var(--green); text-decoration: underline; }
+/* Stretched link: the whole card opens the project page; the buttons sit above it. */
+.card h3 a::after { content: ''; position: absolute; inset: 0; }
 .built-for { margin: 0; font-size: 14px; font-weight: 700; color: var(--wood); }
 .problem { margin: 0; font-size: 15px; }
 .problem strong { color: var(--problem); }
 .card-desc { margin: 0; font-size: 15px; color: var(--muted); }
-.card-cta { margin-top: auto; padding-top: 6px; display: flex; flex-wrap: wrap; gap: 10px; align-items: center; }
+.card-cta { position: relative; margin-top: auto; padding-top: 6px; display: flex; flex-wrap: wrap; gap: 10px; align-items: center; }
 .card-private { font-size: 14px; color: var(--wood); font-weight: 700; }
 
 /* Skills */
