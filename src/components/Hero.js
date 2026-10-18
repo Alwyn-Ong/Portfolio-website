@@ -33,7 +33,7 @@ export default function Hero({ main, ids }) {
       <div className="hero-text">
         <Kicker icon={PLACES.about.icon}>{PLACES.about.place} · {PLACES.about.label}</Kicker>
         <div className="hero-title">
-          {main.image && <img className="avatar" src={asset(main.image)} alt="" width="88" height="88" />}
+          {main.image && <img className="avatar" src={asset(main.image)} alt="" width="96" height="96" />}
           <div>
             <h1 id="hero-name">{main.name}</h1>
             {main.description && <p className="hero-tagline">{main.description}</p>}
