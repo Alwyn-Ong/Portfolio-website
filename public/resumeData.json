@@ -11,7 +11,7 @@
   "main": {
     "name": "Alwyn Ong",
     "description": "Software Developer | Tech Enthusiast | Part-time Gamer",
-    "image": "profilepic.jpg",
+    "image": "profilepic-pixel.png",
     "bio": "I am a Software Engineer and am passionate about technology and using it to solve problems, including my own. Check out my projects below!",
     "resumedownload": "",
     "social": [
@@ -45,7 +45,16 @@
         "company": "Zendesk",
         "title": "Software Engineer",
         "years": "June 2022 - Present",
-        "logo": "logo_Zendesk.png"
+        "logo": "logo_Zendesk.png",
+        "description": [
+          "Took over channel-level user suspension in its final stages and drove it through testing and staged rollout, with adoption dashboards and rollback criteria; built suspension audit logging and admin improvements",
+          "Built core services for a new event-driven messaging backend over Kafka, designed to support 10,000 concurrent agents (5x) and 12,000 conversations (~3x); set up the team's automated testing foundations",
+          "Owned implementation, testing and rollout of auto-release capacity, freeing agent capacity on inactive conversations, with admin-configurable timeouts",
+          "Ran discovery across ticketing, monitoring and reporting for a new AI commerce agent, wrote the ticketing design docs and implemented parts of ticketing",
+          "Designed and implemented the IP-ban migration path within a larger platform migration spanning five product surfaces",
+          "Led on-call incident investigations on a team rotation, debugging with Datadog, Kafka and Kubernetes; added metrics, dashboards and alerts to catch recurrences",
+          "Mentored a junior engineer through onboarding and code review; interviewed engineering candidates"
+        ]
       },
       {
         "company": "Zendesk",
