@@ -23,7 +23,7 @@ Optional fields can be left out. When a field is missing, that part of the page 
 `school` (required), `degree`, `graduated`, `description[]`.
 
 ## `resume.skills[]`
-`name` (required), `level` like `"80%"`.
+Skill groups, one bookshelf each: `category` (required), `items[]` (required). Each item: `name` (required), `level` like `"80%"` (optional; omit to hide the pips).
 
 ## `resume.projects[]`
 Each project gets a card on the home page and its own page at `/projects/<slug>`. Pages are linked prev/next in array order.

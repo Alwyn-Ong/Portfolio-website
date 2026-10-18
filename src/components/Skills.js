@@ -11,30 +11,34 @@ export default function Skills({ skills }) {
   return (
     <section className="section" id="skills">
       <SectionHeading place={PLACES.skills} />
-      <Panel label="Library shelf" fill="#EAD7B0" pad={14}>
-        <ul className="shelf">
-          {skills.map((s, i) => {
-            const v = parseInt(s.level, 10);
-            const has = Number.isFinite(v);
-            return (
-              <li key={s.name} className="book">
-                <span className="spine" style={{ background: SPINE[i % SPINE.length] }} aria-hidden="true">
-                  {monogram(s.name)}
-                </span>
-                <span className="book-name">{s.name}</span>
-                {has && (
-                  <>
-                    <span className="pips" aria-hidden="true">
-                      {Array.from({ length: 10 }, (_, k) => <span key={k} className={k < Math.round(v / 10) ? 'on' : ''} />)}
-                    </span>
-                    <span className="book-level">{v} / 100</span>
-                  </>
-                )}
-              </li>
-            );
-          })}
-        </ul>
-      </Panel>
+      <div style={{ display: 'grid', gap: 24 }}>
+      {skills.map((group, g) => (
+        <Panel key={group.category} label={group.category} fill="#EAD7B0" pad={14}>
+          <ul className="shelf">
+            {group.items.map((s, i) => {
+              const v = parseInt(s.level, 10);
+              const has = Number.isFinite(v);
+              return (
+                <li key={s.name} className="book">
+                  <span className="spine" style={{ background: SPINE[(i + g) % SPINE.length] }} aria-hidden="true">
+                    {monogram(s.name)}
+                  </span>
+                  <span className="book-name">{s.name}</span>
+                  {has && (
+                    <>
+                      <span className="pips" aria-hidden="true">
+                        {Array.from({ length: 10 }, (_, k) => <span key={k} className={k < Math.round(v / 10) ? 'on' : ''} />)}
+                      </span>
+                      <span className="book-level">{v} / 100</span>
+                    </>
+                  )}
+                </li>
+              );
+            })}
+          </ul>
+        </Panel>
+      ))}
+      </div>
     </section>
   );
 }

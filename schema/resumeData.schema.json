@@ -73,13 +73,25 @@
         },
         "skills": {
           "type": "array",
+          "description": "Skill groups, one bookshelf each.",
           "items": {
             "type": "object",
-            "required": ["name"],
+            "required": ["category", "items"],
             "additionalProperties": false,
             "properties": {
-              "name": { "type": "string" },
-              "level": { "type": "string", "pattern": "^\\d{1,3}%$" }
+              "category": { "type": "string" },
+              "items": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "required": ["name"],
+                  "additionalProperties": false,
+                  "properties": {
+                    "name": { "type": "string" },
+                    "level": { "type": "string", "pattern": "^\\d{1,3}%$" }
+                  }
+                }
+              }
             }
           }
         },

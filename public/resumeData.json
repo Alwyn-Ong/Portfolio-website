@@ -103,40 +103,55 @@
     ],
     "skills": [
       {
-        "name": "Java"
+        "category": "Languages",
+        "items": [
+          {
+            "name": "Java"
+          },
+          {
+            "name": "TypeScript"
+          },
+          {
+            "name": "Python"
+          },
+          {
+            "name": "Ruby on Rails"
+          }
+        ]
       },
       {
-        "name": "Ruby on Rails"
+        "category": "Frameworks and APIs",
+        "items": [
+          {
+            "name": "React"
+          },
+          {
+            "name": "React Native"
+          },
+          {
+            "name": "Spring Boot"
+          },
+          {
+            "name": "GraphQL"
+          },
+          {
+            "name": "gRPC"
+          }
+        ]
       },
       {
-        "name": "TypeScript"
-      },
-      {
-        "name": "React"
-      },
-      {
-        "name": "GraphQL"
-      },
-      {
-        "name": "gRPC"
-      },
-      {
-        "name": "MySQL"
-      },
-      {
-        "name": "Kafka"
-      },
-      {
-        "name": "Kubernetes"
-      },
-      {
-        "name": "Python"
-      },
-      {
-        "name": "React Native"
-      },
-      {
-        "name": "Spring Boot"
+        "category": "Data and infrastructure",
+        "items": [
+          {
+            "name": "MySQL"
+          },
+          {
+            "name": "Kafka"
+          },
+          {
+            "name": "Kubernetes"
+          }
+        ]
       }
     ],
     "projects": [
