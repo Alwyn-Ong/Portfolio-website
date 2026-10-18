@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import PixelArt, { gridToCssUrl } from '../pixel/PixelArt';
 import { grassTile } from '../pixel/sprites';
 
@@ -15,15 +16,18 @@ export function Panel({ label, fill, pad = 16, className = '', children }) {
   );
 }
 
-export function Button({ href, variant = 'secondary', big, children }) {
+export function Button({ href, to, variant = 'secondary', big, children }) {
+  const className = `btn btn-${variant}${big ? ' btn-big' : ''}`;
+  const face = <span className="btn-frame"><span className="btn-face">{children}</span></span>;
+  if (to) return <Link className={className} to={to}>{face}</Link>;
   const external = /^https?:/.test(href);
   return (
     <a
-      className={`btn btn-${variant}${big ? ' btn-big' : ''}`}
+      className={className}
       href={href}
       {...(external ? { target: '_blank', rel: 'noopener noreferrer' } : {})}
     >
-      <span className="btn-frame"><span className="btn-face">{children}</span></span>
+      {face}
     </a>
   );
 }

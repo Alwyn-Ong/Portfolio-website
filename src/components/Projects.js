@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import PixelArt from '../pixel/PixelArt';
 import { ICONS } from '../pixel/sprites';
 import { Panel, Button, Tag, SectionHeading } from './ui';
@@ -12,7 +13,7 @@ function ProjectCard({ p }) {
         <span className="card-place"><PixelArt grid={ICONS.gear} scale={2} />Workshop</span>
         <span className={`chip ${priv ? 'chip-private' : 'chip-open'}`}>{priv ? 'Client work' : 'Open source'}</span>
       </div>
-      <h3><a href={`${import.meta.env.BASE_URL}projects/${p.slug}`}>{p.title}</a></h3>
+      <h3><Link to={`/projects/${p.slug}`}>{p.title}</Link></h3>
       {p.builtFor && <p className="built-for">Built for {p.builtFor}</p>}
       {p.problem && <p className="problem"><strong>The problem:</strong> {p.problem}</p>}
       {p.description && <p className="card-desc">{p.description}</p>}

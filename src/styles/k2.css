@@ -344,10 +344,60 @@
 }
 .footer-name { font: 600 16px/1.5 var(--font-px); }
 
+/* Project page */
+.crumbs { list-style: none; margin: 0; max-width: calc(100% - 2 * var(--gutter)); }
+.crumbs li { display: flex; align-items: center; gap: 8px; min-width: 0; }
+.crumbs li:first-child { flex-shrink: 0; }
+.crumbs li + li::before { content: '›'; margin-right: 8px; }
+.crumbs li[aria-current] { overflow: hidden; }
+.crumbs a { display: flex; align-items: center; gap: 8px; color: var(--sign-text); flex-shrink: 0; }
+.crumbs a:hover { color: #fff; }
+.crumbs [aria-current] { white-space: nowrap; text-overflow: ellipsis; display: block; }
+.project {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 380px;
+  grid-template-areas: "head card" "scene card" "body card";
+  grid-template-rows: auto auto 1fr;
+  gap: 28px 48px;
+}
+.project-head { grid-area: head; display: grid; gap: 12px; }
+.project-head .kicker { margin: 0; }
+.project h1 { font-size: 48px; }
+.project-problem { font-size: 18px; max-width: 60ch; }
+.project-scene { grid-area: scene; aspect-ratio: 80 / 45; box-shadow: 0 0 0 3px var(--brown); margin: 3px; filter: var(--shadow); }
+.job-card { grid-area: card; align-self: start; position: sticky; top: 96px; }
+.facts { margin: 0; display: grid; gap: 6px; }
+.facts dt { font: 600 14px/1.2 var(--font-px); color: var(--muted); }
+.facts dd { margin: 0 0 10px; }
+.metric { display: inline-block; justify-self: start; padding: 2px 8px; background: var(--metric-bg); font-weight: 700; }
+.job-cta { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; padding-top: 14px; box-shadow: inset 0 1px 0 var(--line); }
+.job-cta .card-private { margin: 0; }
+.project-body { grid-area: body; display: grid; gap: 28px; align-content: start; max-width: 70ch; }
+.project-body h2 { font-size: 26px; margin-bottom: 10px; }
+.project-body p { margin: 0; }
+.pager-wrap { padding-top: 0; }
+.pager { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; padding-top: 28px; box-shadow: inset 0 3px 0 var(--line); }
+.pager-link {
+  display: grid;
+  gap: 4px;
+  padding: 16px 20px;
+  background: var(--paper);
+  color: var(--ink);
+  text-decoration: none;
+  box-shadow: 0 0 0 3px var(--brown), 4px 4px 0 3px rgba(59, 42, 32, .28);
+  margin: 3px;
+}
+.pager-next { text-align: right; }
+.pager-dir { font: 600 14px/1.2 var(--font-px); color: var(--muted); }
+.pager-title { font: 600 20px/1.2 var(--font-px); }
+.pager-link:hover .pager-title { color: var(--green); text-decoration: underline; }
+.project-missing { display: grid; gap: 24px; justify-items: start; min-height: 50vh; }
+
 @media (max-width: 1100px) {
   .hero { grid-template-columns: 1fr; }
   .work-layout { grid-template-columns: 1fr 1fr; }
   .cards { grid-template-columns: repeat(2, 1fr); }
+  .project { grid-template-columns: minmax(0, 1fr) 320px; gap: 24px 32px; }
 }
 
 @media (max-width: 720px) {
@@ -365,4 +415,10 @@
   .post-stamp { display: none; }
   .notice { padding: 12px 12px 12px 14px; gap: 10px; }
   .notice .stamp { display: none; }
+  .project { grid-template-columns: minmax(0, 1fr); grid-template-areas: "head" "scene" "card" "body"; grid-template-rows: none; gap: 24px; }
+  .project h1 { font-size: 32px; }
+  .project-problem { font-size: 17px; }
+  .job-card { position: static; }
+  .pager { grid-template-columns: 1fr; gap: 16px; }
+  .pager-title { font-size: 18px; }
 }

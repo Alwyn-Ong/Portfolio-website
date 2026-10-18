@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link, useLocation } from 'react-router-dom';
 import PixelArt from '../pixel/PixelArt';
 import { LOGO } from '../pixel/sprites';
 import { PLACES } from '../data';
@@ -7,19 +8,25 @@ import useMobile from '../useMobile';
 export default function Header({ main, ids }) {
   const mobile = useMobile();
   const [open, setOpen] = useState(false);
+  // Off the home page, section links go back to it.
+  const home = useLocation().pathname === '/';
   const links = ids.map((id) => (
-    <li key={id}><a href={`#${id}`} onClick={() => setOpen(false)}>{PLACES[id].label}</a></li>
+    <li key={id}>
+      {home
+        ? <a href={`#${id}`} onClick={() => setOpen(false)}>{PLACES[id].label}</a>
+        : <Link to={`/#${id}`} onClick={() => setOpen(false)}>{PLACES[id].label}</Link>}
+    </li>
   ));
 
   return (
     <header className="header">
-      <a className="brand" href="#top">
+      <Link className="brand" to="/">
         <PixelArt grid={LOGO} width={40} height={40} />
         <span>
           <span className="brand-name">{main.name}</span>
           {!mobile && main.description && <span className="brand-sub">{main.description}</span>}
         </span>
-      </a>
+      </Link>
       {mobile ? (
         <div className="menu">
           <button
