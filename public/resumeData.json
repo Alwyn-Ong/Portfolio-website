@@ -4,9 +4,9 @@
   "sections": [
     "about",
     "work",
+    "projects",
     "education",
-    "skills",
-    "projects"
+    "skills"
   ],
   "main": {
     "name": "Alwyn Ong",
