@@ -1,19 +1,22 @@
 import React, { useEffect, useState } from 'react';
+import Header from './components/Header';
+import Hero from './components/Hero';
+import Work from './components/Work';
+import Projects from './components/Projects';
+import Skills from './components/Skills';
+import Education from './components/Education';
+import Contact from './components/Contact';
+import Footer from './components/Footer';
+import { Street } from './components/ui';
+import { PLACES } from './data';
 
-// Temporary plain renderer: proves the data loads and `sections` drives the page.
-// Replaced by the K2 components in step 3.
+const DEFAULT_SECTIONS = ['about', 'work', 'projects', 'skills', 'education'];
+
 const SECTIONS = {
-  about: ({ main }) => <p>{main.bio}</p>,
-  work: ({ resume }) => (resume.work ?? []).map((w, i) => (
-    <div key={i}><strong>{w.title}, {w.company}</strong> {w.years}</div>
-  )),
-  education: ({ resume }) => (resume.education ?? []).map((e, i) => (
-    <div key={i}><strong>{e.school}</strong> {e.degree} {e.graduated}</div>
-  )),
-  skills: ({ resume }) => <p>{(resume.skills ?? []).map((s) => s.name).join(', ')}</p>,
-  projects: ({ resume }) => (resume.projects ?? []).map((p) => (
-    <div key={p.slug}><strong>{p.title}</strong> {p.description}</div>
-  )),
+  work: ({ resume }) => <Work work={resume.work} />,
+  projects: ({ resume }) => <Projects projects={resume.projects} />,
+  skills: ({ resume }) => <Skills skills={resume.skills} />,
+  education: ({ resume }) => <Education education={resume.education} />,
 };
 
 export default function App() {
@@ -30,20 +33,34 @@ export default function App() {
   if (error) return <p>Could not load resume data.</p>;
   if (!data) return null;
 
+  const { main } = data;
   const resume = data.resume ?? {};
+  const hasData = (id) => id === 'about' || resume[id]?.length > 0;
+  const sections = (data.sections ?? DEFAULT_SECTIONS).filter(hasData);
+  const ids = main.social?.length ? [...sections, 'contact'] : sections;
+
   return (
-    <main>
-      <h1>{data.main.name}</h1>
-      <p>{data.main.description}</p>
-      {(data.sections ?? Object.keys(SECTIONS)).map((id) => {
-        const Section = SECTIONS[id];
-        return (
-          <section key={id} id={id}>
-            <h2>{id}</h2>
-            <Section main={data.main} resume={resume} />
-          </section>
-        );
-      })}
-    </main>
+    <div id="top">
+      <Header main={main} ids={ids} />
+      <main>
+        {sections.map((id) => {
+          if (id === 'about') return <Hero key={id} main={main} ids={ids} />;
+          const Section = SECTIONS[id];
+          return (
+            <React.Fragment key={id}>
+              <Street place={PLACES[id]} />
+              <Section resume={resume} />
+            </React.Fragment>
+          );
+        })}
+        {main.social?.length > 0 && (
+          <>
+            <Street place={PLACES.contact} />
+            <Contact social={main.social} />
+          </>
+        )}
+      </main>
+      <Footer main={main} />
+    </div>
   );
 }
