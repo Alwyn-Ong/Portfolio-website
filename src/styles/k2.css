@@ -1,5 +1,9 @@
 /* K2 home page components. */
 
+/* Page shell: keep the footer at the bottom of the window on short pages. */
+#root { display: flex; flex-direction: column; min-height: 100vh; }
+#root > main { flex: 1 0 auto; }
+
 /* Panel: brown stepped frame around a paper fill. The shadow sits on the
    unclipped wrapper so clip-path doesn't cut it off. */
 .panel { filter: var(--shadow); }
@@ -391,7 +395,7 @@
 .pager-dir { font: 600 14px/1.2 var(--font-px); color: var(--muted); }
 .pager-title { font: 600 20px/1.2 var(--font-px); }
 .pager-link:hover .pager-title { color: var(--green); text-decoration: underline; }
-.project-missing { display: grid; gap: 24px; justify-items: start; min-height: 50vh; }
+.project-missing { display: grid; gap: 24px; justify-items: start; align-content: start; min-height: 50vh; }
 
 @media (max-width: 1100px) {
   .hero { grid-template-columns: 1fr; }
