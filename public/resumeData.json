@@ -34,8 +34,8 @@
         "degree": "Bachelor of Science (Information Systems)",
         "graduated": "August 2018 - May 2022",
         "description": [
+          "Final year project: self-service portal for VMware's training platform (Spring Boot, React)",
           "Teaching Assistant (CS102 - Programming Fundamentals II)",
-          "Business Intelligence & Analytics - Data Associate Program",
           "Coder's Assembly - Mentor"
         ]
       }
@@ -103,32 +103,40 @@
     ],
     "skills": [
       {
-        "name": "Python",
-        "level": "80%"
+        "name": "Java"
       },
       {
-        "name": "JAVA",
-        "level": "80%"
+        "name": "Ruby on Rails"
       },
       {
-        "name": "MySQL",
-        "level": "80%"
+        "name": "TypeScript"
       },
       {
-        "name": "JavaScript",
-        "level": "80%"
+        "name": "React"
       },
       {
-        "name": "PHP",
-        "level": "70%"
+        "name": "GraphQL"
       },
       {
-        "name": "CSS",
-        "level": "70%"
+        "name": "gRPC"
       },
       {
-        "name": "HTML",
-        "level": "70%"
+        "name": "MySQL"
+      },
+      {
+        "name": "Kafka"
+      },
+      {
+        "name": "Kubernetes"
+      },
+      {
+        "name": "Python"
+      },
+      {
+        "name": "React Native"
+      },
+      {
+        "name": "Spring Boot"
       }
     ],
     "projects": [
@@ -182,59 +190,23 @@
         ]
       },
       {
-        "title": "URL Shortener",
-        "slug": "url-shortener",
-        "description": "Web application to shorten urls",
-        "github": "https://github.com/Alwyn-Ong/URL-Shortener",
-        "link": "",
-        "technology": [
-          "REST API",
-          "Spring Boot",
-          "Maven",
-          "ReactJs",
-          "Docker",
-          "AWS"
-        ]
-      },
-      {
-        "title": "Self Service Portal for Training Platform for VMWare",
-        "slug": "vmware-self-service-portal",
-        "description": "Self Service Portal to manage user access and automate dissemination of lab materials for use during workshops",
-        "github": "",
-        "link": "",
-        "technology": [
-          "REST API",
-          "Spring Boot",
-          "SwaggerUI",
-          "Maven",
-          "ReactJs"
-        ]
-      },
-      {
-        "title": "Vessel Tracking System",
-        "slug": "psa-vessel-tracking",
-        "description": "Vessel Tracking System for Port of Singapore Authority (PSA)",
-        "github": "",
-        "link": "",
-        "technology": [
-          "REST API",
-          "Spring Boot",
-          "SwaggerUI",
-          "Maven",
-          "JavaScript"
-        ]
-      },
-      {
         "title": "Mahjong Score Calculator",
         "slug": "mahjong-score-calculator",
-        "description": "A website to help you calculate the score (tai), based on your current tiles.",
-        "github": "https://github.com/gilesccs/MahjongScoreCalculator",
-        "link": "",
+        "description": "Website that calculates the tai of a Mahjong hand from the tiles you pick, checks whether the hand is a winning one, explains why not if it isn't, and suggests which tile to discard to get there. Rebuilt from the original in TypeScript.",
+        "github": "https://github.com/Alwyn-Ong/MahjongScoreCalculatorV2",
+        "link": "https://alwyn-ong.github.io/MahjongScoreCalculatorV2/",
         "technology": [
-          "JavaScript",
-          "ReactJS",
+          "TypeScript",
+          "React",
+          "Vite",
           "Material-UI",
-          "Toastify"
+          "dnd-kit"
+        ],
+        "howItWorks": [
+          "Pick tiles from the selector; the tray arranges them by winning melds and supports drag-and-drop ordering.",
+          "Win detection uses recursive backtracking over sorted tiles for triplet and sequence melds, plus seven pairs and thirteen orphans.",
+          "Pinghu is detected automatically from the tile composition instead of a user checkbox.",
+          "Hand diagnostics explain why a hand is invalid and suggest the top discards ranked by number of valid draws."
         ]
       },
       {
@@ -247,33 +219,6 @@
           "JavaScript",
           "ReactJS",
           "ParticlesBg"
-        ]
-      },
-      {
-        "title": "FBS Booker",
-        "slug": "fbs-booker",
-        "description": "Tool to automate booking of facilities in SMU's Facility Booking System (FBS). A video demo can be found on the Github link.",
-        "github": "https://github.com/Alwyn-Ong/FBS-Auto-Booker",
-        "link": "",
-        "technology": [
-          "Python (Selenium)",
-          "Automation",
-          "Web Scraping"
-        ]
-      },
-      {
-        "title": "SGLoveLah",
-        "slug": "sglovelah",
-        "description": "Sample dating website, blurs images and only unblurs upon both users pressing a \"Ready Button\" ",
-        "github": "https://github.com/Alwyn-Ong/ESD",
-        "link": "",
-        "technology": [
-          "REST API",
-          "JavaScript",
-          "Python (Flask)",
-          "AMQP (RabbitMQ)",
-          "Docker",
-          "Python (Socket.IO)"
         ]
       }
     ]
