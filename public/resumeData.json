@@ -160,6 +160,7 @@
         "slug": "stocktaker",
         "builtFor": "a department's internal stock-take checks",
         "problem": "Stock checks were done by hand on paper, then reconciled manually.",
+        "outcome": "A stock-take went from roughly 10 people over a week to roughly 3 people in a day.",
         "description": "Android app for physical stock checks: scan each item's barcode at a location and submit what was found to a shared master inventory Google Sheet.",
         "github": "https://github.com/Alwyn-Ong/stocktaker",
         "link": "",
