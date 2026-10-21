@@ -48,7 +48,8 @@
         "logo": "logo_Zendesk.png",
         "description": [
           "Took over channel-level user suspension in its final stages and drove it through testing and staged rollout, with adoption dashboards and rollback criteria; built suspension audit logging and admin improvements",
-          "Built core services for a new event-driven messaging backend over Kafka, designed to support 10,000 concurrent agents (5x) and 12,000 conversations (~3x); set up the team's automated testing foundations",
+          "Built core services for a new event-driven messaging backend over Kafka, handling ~400M events/day across production pods",
+          "Volunteered as testing champion and laid the team's automated testing foundations: Ruby API tests on automated Jenkins builds, plus CI gates integrated with the dev environment across our repos; handed the role to a junior engineer and onboarded another team's testing champion; the team's smoke tests caught a null-pointer regression in staging before it reached production",
           "Owned implementation, testing and rollout of auto-release capacity, freeing agent capacity on inactive conversations, with admin-configurable timeouts",
           "Ran discovery across ticketing, monitoring and reporting for a new AI commerce agent, wrote the ticketing design docs and implemented parts of ticketing",
           "Designed and implemented the IP-ban migration path within a larger platform migration spanning five product surfaces",
@@ -169,6 +170,7 @@
         "slug": "stocktaker",
         "builtFor": "a department's internal stock-take checks",
         "problem": "Stock checks were done by hand on paper, then reconciled manually.",
+        "outcome": "A stock-take went from roughly 10 people over a week to roughly 3 people in a day.",
         "description": "Android app for physical stock checks: scan each item's barcode at a location and submit what was found to a shared master inventory Google Sheet.",
         "github": "https://github.com/Alwyn-Ong/stocktaker",
         "link": "",
