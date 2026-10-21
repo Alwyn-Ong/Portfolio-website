@@ -103,7 +103,6 @@ export default function ProjectPage({ projects }) {
           <h1>{p.title}</h1>
           {p.builtFor && <p className="built-for">Built for {p.builtFor}</p>}
           {p.problem && <p className="problem project-problem"><strong>The problem:</strong> {p.problem}</p>}
-          {p.outcome && <p className="problem project-problem"><strong>The result:</strong> {p.outcome}</p>}
         </header>
         {p.demo ? (
           <div className="project-scene project-scene-demo">

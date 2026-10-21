@@ -16,7 +16,7 @@ function ProjectCard({ p }) {
       <h3><Link to={`/projects/${p.slug}`}>{p.title}</Link></h3>
       {p.builtFor && <p className="built-for">Built for {p.builtFor}</p>}
       {p.problem && <p className="problem"><strong>The problem:</strong> {p.problem}</p>}
-      {p.outcome && <p className="problem"><strong>The result:</strong> {p.outcome}</p>}
+      {p.metric && <p className="problem"><strong>The result:</strong> {p.metric}</p>}
       {p.description && <p className="card-desc">{p.description}</p>}
       {p.technology?.length > 0 && (
         <div className="tags">{p.technology.map((t) => <Tag key={t}>{t}</Tag>)}</div>
