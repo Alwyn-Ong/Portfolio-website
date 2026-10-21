@@ -48,11 +48,11 @@
         "logo": "logo_Zendesk.png",
         "description": [
           "Took over channel-level user suspension in its final stages and drove it through testing and staged rollout, with adoption dashboards and rollback criteria; built suspension audit logging and admin improvements",
-          "Built core services for a new event-driven messaging backend over Kafka, handling ~400M events/day across production pods",
-          "Volunteered as testing champion and laid the team's automated testing foundations: Ruby API tests on automated Jenkins builds, plus CI gates integrated with the dev environment across our repos; handed the role to a junior engineer and onboarded another team's testing champion; the team's smoke tests caught a null-pointer regression in staging before it reached production",
+          "Built core services for a new event-driven messaging backend over Kafka, addressing the scale and coupling limits of the previous design",
+          "Volunteered as testing champion and laid the team's automated testing foundations: Ruby API tests on automated Jenkins builds, plus CI gates integrated with the dev environment across our repos; handed the role to a junior engineer and onboarded another team's testing champion",
           "Owned implementation, testing and rollout of auto-release capacity, freeing agent capacity on inactive conversations, with admin-configurable timeouts",
           "Ran discovery across ticketing, monitoring and reporting for a new AI commerce agent, wrote the ticketing design docs and implemented parts of ticketing",
-          "Designed and implemented the IP-ban migration path within a larger platform migration spanning five product surfaces",
+          "Designed and implemented the IP-ban migration path within a larger platform migration",
           "Led on-call incident investigations on a team rotation, debugging with Datadog, Kafka and Kubernetes; added metrics, dashboards and alerts to catch recurrences",
           "Mentored a junior engineer through onboarding and code review; interviewed engineering candidates"
         ]
