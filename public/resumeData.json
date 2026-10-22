@@ -179,7 +179,7 @@
           "React Native",
           "Expo",
           "TypeScript",
-          "Zustand",
+          "Google OAuth",
           "Google Sheets API",
           "Google Drive API",
           "Jest"
@@ -200,12 +200,10 @@
         "demo": "linkbot-demo.mp4",
         "technology": [
           "Python",
-          "python-telegram-bot",
+          "Telegram Bot API",
           "Gemini API",
           "data.gov.sg API",
-          "Jina Reader",
-          "Playwright",
-          "yt-dlp",
+          "Web scraping",
           "Obsidian"
         ],
         "howItWorks": [
@@ -226,9 +224,7 @@
         "technology": [
           "TypeScript",
           "React",
-          "Vite",
-          "Material-UI",
-          "dnd-kit"
+          "Vite"
         ],
         "howItWorks": [
           "Pick tiles from the selector; the tray arranges them by winning melds and supports drag-and-drop ordering.",
@@ -245,8 +241,8 @@
         "link": "",
         "technology": [
           "JavaScript",
-          "ReactJS",
-          "ParticlesBg"
+          "React",
+          "Vite"
         ]
       }
     ]
