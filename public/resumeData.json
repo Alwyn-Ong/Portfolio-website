@@ -184,7 +184,7 @@
       {
         "title": "Linkbot",
         "slug": "linkbot",
-        "description": "Telegram bot that saves links shared from mobile (Instagram, TikTok, web articles), extracts structured details with an LLM, stores each one as a note in an Obsidian vault, and answers natural language questions about what's saved.",
+        "description": "Telegram bot that saves links shared from mobile (Instagram, TikTok, web articles), extracts structured details with an LLM, stores each one as a note in an Obsidian vault, and answers natural language questions about what's saved, re-ranking suggestions by live Singapore weather and air quality fetched from the government's data.gov.sg API.",
         "github": "https://github.com/Alwyn-Ong/linkbot",
         "link": "https://alwyn-ong.github.io/linkbot/",
         "demo": "linkbot-demo.mp4",
@@ -192,6 +192,7 @@
           "Python",
           "python-telegram-bot",
           "Gemini API",
+          "data.gov.sg API",
           "Jina Reader",
           "Playwright",
           "yt-dlp",
@@ -199,10 +200,11 @@
         ],
         "howItWorks": [
           "Share a link to the bot from the phone's share sheet; the page is scraped to clean text (Jina Reader, Playwright for Instagram, yt-dlp for TikTok).",
-          "Gemini extracts structured fields such as name, type, address, hours, date and tags, and the bot shows them for review.",
+          "Gemini extracts structured fields such as name, type, address, hours, date, tags and setting (indoor, outdoor or both), and the bot shows them for review.",
           "Reply ok to save, or type a correction and the bot merges it in before saving.",
           "Each entry is saved as a markdown note with YAML frontmatter in the Obsidian vault.",
-          "Ask a question like \"Japanese restaurants\" and the bot answers from the saved notes."
+          "Ask a question like \"Japanese restaurants\" and the bot answers from the saved notes.",
+          "For today or tonight, the bot fetches the 2-hour forecast and PSI from the government's data.gov.sg API (cached for 15 minutes, falling back to the last reading if the API is down), then moves outdoor places up when it's clear and indoor ones up when it's raining or hazy, with a wet-weather alternative for outdoor picks."
         ]
       },
       {
