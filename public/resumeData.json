@@ -47,7 +47,7 @@
         "years": "June 2022 - Present",
         "logo": "logo_Zendesk.png",
         "description": [
-          "Took over channel-level user suspension in its final stages and drove it through testing and staged rollout, with adoption dashboards and rollback criteria; built suspension audit logging and admin improvements",
+          "Owned delivery of channel-level user suspension through its final stages, driving it through testing and staged rollout with adoption dashboards and rollback criteria; built suspension audit logging and admin improvements",
           "Built core services for a new event-driven messaging backend over Kafka, addressing the scale and coupling limits of the previous design",
           "Volunteered as testing champion and laid the team's automated testing foundations: Ruby API tests on automated Jenkins builds, plus CI gates integrated with the dev environment across our repos; handed the role to a junior engineer and onboarded another team's testing champion",
           "Owned implementation, testing and rollout of auto-release capacity, freeing agent capacity on inactive conversations, with admin-configurable timeouts",
