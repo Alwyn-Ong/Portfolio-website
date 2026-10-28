@@ -57,11 +57,8 @@
         "title": "Software Engineer Intern",
         "years": "Aug 2021 - Dec 2021",
         "description": [
-          "Created new model and REST endpoint in Flask application, triggering RPC calls to Twisted application and vice versa",
-          "Improved deploy process for Flask application, reducing deploy time by 77% (Python Fabric), improving reliability",
-          "Removed fully rolled out feature gates, improving operability, performance as well as reducing code complexity",
-          "Improved event tagging on Sentry connected applications, improving monitoring through more detailed logging",
-          "Added new model fields for Flask app, updated React components to create/edit, display and search by new fields"
+          "Cut Flask application deploy time by 77% by parallelising the deploy sequence with Python Fabric",
+          "Upgraded an existing internal tool, across its React UI and backend, to close a gap in the team's workflow"
         ],
         "logo": "logo_Zendesk.png"
       },
@@ -70,10 +67,8 @@
         "title": "Software Engineer Intern - Young SEEDer Program",
         "years": "May 2021 - July 2021",
         "description": [
-          "Involved in building microservices exposing legacy systems via REST APIs in Java Spring Boot, connecting to MariaDB ",
-          "Performed Spring Boot migration update of various microservices",
-          "Conducted research and proposed solution for migrating from Jhipster to Spring Cloud ",
-          "Improved CI/CD process via Jenkins for Python Flask module "
+          "Built Spring Boot microservices exposing legacy systems via REST APIs",
+          "Proposed a migration path from JHipster to Spring Cloud"
         ],
         "logo": "logo_DBS.png"
       },
@@ -82,12 +77,8 @@
         "title": "Developer Intern",
         "years": "May 2020 - August 2020",
         "description": [
-          "Developed system to track candidates utilising SharePoint platform (SharePoint REST APIs, JavaScript/jQuery)",
-          "Developed SharePoint WebPart to help with various use cases (SharePoint Framework (SPFx), JavaScript)",
-          "Setup NLP (Sentiment Analysis, Removal of Stop Words) for form responses, automating scripts to call Google Cloud APIs via Google Cloud Platform (JavaScript)",
-          "Setup, managed and regularly updated information system for tech leads and recruiters to support recruitment event",
-          "Helped to port files and systems to new SharePoint Team Site",
-          "Wrote various scripts to help automate tasks (VBA)"
+          "Prototyped a candidate-tracking system on SharePoint for the talent acquisition team",
+          "Supported recruitment events with an information system and automation scripts"
         ],
         "logo": "logo_govtech_hort.gif"
       },
@@ -96,12 +87,8 @@
         "title": "Software Developer Intern",
         "years": "Dec 2019",
         "description": [
-          "Leveraged existing framework to fix and improve upon company website, fixing existing bugs and publishing new pages",
-          "Setup an automatic email reply system for new users to receive a confirmation email",
-          "Setup Google Analytics on website and setup dashboard to collect data for analysis on user demographics",
-          "Analyse current customer journey to come up with business process workflow model for process analysis",
-          "Refined and improved on business model for new feature on mobile app",
-          "Helped with ideation for customer acquisition for mobile app"
+          "Fixed bugs and published new pages on the company website",
+          "Set up Google Analytics to track user demographics"
         ],
         "logo": "logo_CoXplore.png"
       }
