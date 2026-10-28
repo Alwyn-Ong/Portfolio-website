@@ -45,7 +45,12 @@
         "company": "Zendesk",
         "title": "Software Engineer",
         "years": "June 2022 - Present",
-        "logo": "logo_Zendesk.png"
+        "logo": "logo_Zendesk.png",
+        "description": [
+          "Build end-to-end features on a Kafka-based messaging backend handling hundreds of millions of events per day",
+          "Own features from design through staged rollout, across backend services and React admin tools",
+          "Mentor junior engineers and take part in on-call and hiring"
+        ]
       },
       {
         "company": "Zendesk",
